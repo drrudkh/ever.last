@@ -1,0 +1,27 @@
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    flex: 1;
+    padding: 2% 5%;
+    background-color: #BB0000;
+    box-sizing: border-box;
+
+    .logo {
+
+        p {
+            margin-left: 5px;
+            display: inline-block;
+        }
+    }
+}
+
+main {
+    flex: 3;
+    background-color: green;
+    padding: 2% 5%;
+    position: relative;
+}

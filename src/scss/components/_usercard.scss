@@ -1,0 +1,87 @@
+.user-card {
+    height: 700px;
+    width: 350px;
+    background-color: white;
+    box-shadow: 10px 9px 32px -10px rgba(0, 0, 0, 0.75);
+    @include position(absolute, $top: -150px);
+    @include flex($direction: column);
+}
+
+.card-header {
+    flex: 2;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.darken {
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: inherit;
+        z-index: -1;
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+        @include position(absolute, $left: 0);
+    }
+}
+
+.profile-pic {
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    background-size: contain;
+    border: 5px solid white;
+    margin: 0 auto;
+    @include position(absolute, $bottom: -65px, $left: 0, $right: 0);
+}
+
+.user-details {
+    flex: 2;
+    padding: 20px;
+    @include flex($justify: space-between, $direction: column);
+}
+
+.user-intro {
+    margin-top: 50px;
+    @include flex($align: center, $direction: column);
+
+    p {
+        font-style: italic;
+        margin-top: 5px;
+    }
+}
+
+.user-stats {
+    flex: 1;
+    ul {
+        height: 100%;
+        @include flex($align: center, $justify: space-between);
+
+        li {
+            text-align: center;
+
+            h3 {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+.user-chart {
+    text-align: center;
+    padding-bottom: 20px;
+    p {
+        margin-bottom: 10px;
+    }
+
+    span {
+        color: #BB0000;
+        font-weight: bold;
+    }
+}
+
+.user-tops {
+    flex: 1;
+}

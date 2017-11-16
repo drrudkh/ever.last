@@ -1,0 +1,42 @@
+<section class="wrapper">
+    <header>
+        <div class="logo">
+            <img src="../scss/images/logo.png" height="25" width="50">
+            <p>ever.last</p>
+        </div>
+    </header>
+    <main>
+        <div class="user-card">
+            <div class="card-header darken" ng-style="{'background-image':'url('+ vm.userData.userTopArtists.data.topartists.artist[0].image[4]['#text'] +')'}">
+                <div class="profile-pic" ng-style="{'background-image':'url('+ vm.userData.userInfo.data.user.image[3]['#text'] +')'}"></div>
+            </div>
+            <div class="user-details">
+                <div class="user-intro">
+                    <h3>{{vm.userData.userInfo.data.user.name}}</h3>
+                    <p>{{vm.userData.userInfo.data.user.realname}}, {{vm.userData.userInfo.data.user.country}}</p>
+                </div>
+                <div class="user-stats">
+                    <ul>
+                        <li>
+                            <h3>{{vm.userData.userTopArtists.data.topartists["@attr"].total}}</h3>
+                            <p>artists</p>
+                        </li>
+                        <li>
+                            <h3>386</h3>
+                            <p>tracks</p>
+                        </li>
+                        <li>
+                            <h3>386</h3>
+                            <p>albums</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="user-chart">
+                <p># of <span>scrobbles</span> for the past month</p>
+                <canvas tc-chartjs-line chart-data="vm.chartData.data" chart-options="vm.chartData.options" height="100px"></canvas>
+            </div>
+            <slider></slider>
+        </div>
+    </main>
+</section>

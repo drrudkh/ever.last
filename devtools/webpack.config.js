@@ -40,7 +40,8 @@ module.exports = {
     ],
     extensions: ['.ts', '.js', '.json', '.scss', '.css', '.html', '.jpg', '.png'],
     alias:  {
-        'default': path.resolve('src/modules/default')
+        'landing': path.resolve('src/modules/landing'),
+        'profile': path.resolve('src/modules/profile')
     }
   },
   node: {
@@ -99,12 +100,13 @@ module.exports = {
             loader: 'css-loader'
           },
           {
+            loader: 'resolve-url-loader'
+          },
+          {
             loader: 'sass-loader',
             options: {
-              includePaths: [
-                // path.resolve('node_modules/xbem/src/'),
-                // path.resolve('src/themes/' + config.theme)
-              ]
+              sourceMap: true,
+              includePaths: []
             }
           }
         ]

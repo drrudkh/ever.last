@@ -1,0 +1,47 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'build' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 verbose run-script [ 'prebuild', 'build', 'postbuild' ]
+5 info lifecycle ever.last@1.0.0~prebuild: ever.last@1.0.0
+6 verbose lifecycle ever.last@1.0.0~prebuild: unsafe-perm in lifecycle true
+7 verbose lifecycle ever.last@1.0.0~prebuild: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;D:\homotml&csstarcraft\ng-ever.last\node_modules\.bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Ruby22-x64\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Dat Nigga Snowman\AppData\Local\atom\bin;C:\Users\Dat Nigga Snowman\AppData\Roaming\npm
+8 verbose lifecycle ever.last@1.0.0~prebuild: CWD: D:\homotml&csstarcraft\ng-ever.last
+9 silly lifecycle ever.last@1.0.0~prebuild: Args: [ '/d /s /c', 'rimraf public' ]
+10 silly lifecycle ever.last@1.0.0~prebuild: Returned: code: 0  signal: null
+11 info lifecycle ever.last@1.0.0~build: ever.last@1.0.0
+12 verbose lifecycle ever.last@1.0.0~build: unsafe-perm in lifecycle true
+13 verbose lifecycle ever.last@1.0.0~build: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;D:\homotml&csstarcraft\ng-ever.last\node_modules\.bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Ruby22-x64\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Dat Nigga Snowman\AppData\Local\atom\bin;C:\Users\Dat Nigga Snowman\AppData\Roaming\npm
+14 verbose lifecycle ever.last@1.0.0~build: CWD: D:\homotml&csstarcraft\ng-ever.last
+15 silly lifecycle ever.last@1.0.0~build: Args: [ '/d /s /c', 'webpack --config devtools/webpack.config' ]
+16 silly lifecycle ever.last@1.0.0~build: Returned: code: 0  signal: null
+17 info lifecycle ever.last@1.0.0~postbuild: ever.last@1.0.0
+18 verbose lifecycle ever.last@1.0.0~postbuild: unsafe-perm in lifecycle true
+19 verbose lifecycle ever.last@1.0.0~postbuild: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;D:\homotml&csstarcraft\ng-ever.last\node_modules\.bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Git\cmd;C:\Ruby22-x64\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Dat Nigga Snowman\AppData\Local\atom\bin;C:\Users\Dat Nigga Snowman\AppData\Roaming\npm
+20 verbose lifecycle ever.last@1.0.0~postbuild: CWD: D:\homotml&csstarcraft\ng-ever.last
+21 silly lifecycle ever.last@1.0.0~postbuild: Args: [ '/d /s /c',
+21 silly lifecycle   'webpack-dev-server --config devtools/webpack.config' ]
+22 verbose stack Error: kill ENOSYS
+22 verbose stack     at exports._errnoException (util.js:1026:11)
+22 verbose stack     at process.kill (internal/process.js:172:13)
+22 verbose stack     at process.listener (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:86:15)
+22 verbose stack     at emitNone (events.js:91:20)
+22 verbose stack     at process.emit (events.js:185:7)
+22 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+22 verbose stack     at processEmit (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\node_modules\npmlog\node_modules\gauge\node_modules\signal-exit\index.js:146:32)
+22 verbose stack     at Signal.wrap.onsignal (internal/process.js:199:44)
+23 verbose cwd D:\homotml&csstarcraft\ng-ever.last
+24 error Windows_NT 6.3.9600
+25 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "build"
+26 error node v6.9.1
+27 error npm  v3.10.8
+28 error code ENOSYS
+29 error errno ENOSYS
+30 error syscall kill
+31 error kill ENOSYS
+32 error If you need help, you may report this error at:
+32 error     <https://github.com/npm/npm/issues>
+33 verbose exit [ 1, true ]
