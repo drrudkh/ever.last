@@ -1,35 +1,62 @@
 // DISPLAY FLEX //
-
 @mixin flex($inline: false, $wrap: nowrap, $direction: row, $justify: flex-start, $align: stretch) {
-	@if $inline == false {
-		display: flex;
-	} @else {
-		display: inline-flex;
-	}
+    @if $inline==false {
+        display: flex;
+    }
+    @else {
+        display: inline-flex;
+    }
 
-	@if $wrap != nowrap {
-		flex-wrap: wrap;
-	}
+    @if $wrap !=nowrap {
+        flex-wrap: wrap;
+    }
 
-	@if $direction != row {
-		flex-direction: column;
-	}
+    @if $direction !=row {
+        flex-direction: column;
+    }
 
-	@if $justify != flex-start {
-		justify-content: $justify;
-	}
+    @if $justify !=flex-start {
+        justify-content: $justify;
+    }
 
-	@if $align != stretch {
-		align-items: $align;
-	}
+    @if $align !=stretch {
+        align-items: $align;
+    }
 }
 
 // POSITIONING //
+@mixin position($pos, $content: false, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $pos;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
 
-@mixin position($pos, $top: null, $right: null, $bottom: null, $left: null) {
-	position: $pos;
-	top: $top;
-	right: $right;
-	bottom: $bottom;
-	left: $left;
+// HEXAGON //
+@mixin hex($width, $color, $height: $width * 0.57) {
+    width: $width;
+    height: $height;
+    background-color: $color;
+    margin: ($height / 2) 0;
+
+    %corners {
+        content: "";
+        position: absolute;
+        width: 0;
+        border-left: ($width / 2) solid transparent;
+        border-right: ($width / 2) solid transparent;
+    }
+
+    &:before {
+    	@extend %corners;
+        bottom: 100%;
+        border-bottom: ($height / 2) solid $color;
+    }
+
+    &:after {
+    	@extend %corners;
+        top: 100%;
+        border-top: ($height / 2) solid $color;
+    }
 }

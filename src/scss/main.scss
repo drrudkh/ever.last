@@ -8,9 +8,11 @@
 	'pages/_profile.scss';
 
 @import
-	'abstracts/_mixins.scss';
+	'abstracts/_mixins.scss',
+	'abstracts/_variables.scss',
+	'abstracts/_placeholders.scss';
 
 @import
 	'components/_usercard.scss',
-	'components/_slider.scss';
+	'components/_milestone.scss';
 

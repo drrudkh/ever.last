@@ -1,0 +1,4 @@
+.milestone-hex {
+    @include hex(80px, $red);
+    position: relative;
+}
